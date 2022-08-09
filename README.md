@@ -1,6 +1,6 @@
-NUUK CONSTRUCTION WEBPAGE........                                                                                                                                         
+NUUK Architecture WEBPAGE........                                                                                                                                         
 
-Here I have designed a webpage like Construction Related Webpage.                                                                                                         
+Here I have designed a webpage like Architecture Related Webpage.                                                                                                         
 
 Programming Languages : HTML, CSS                                                                                                                                         
 Tools  : Visual Studio Code.
