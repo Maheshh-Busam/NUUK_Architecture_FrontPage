@@ -1,0 +1,808 @@
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.background-image{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    opacity: 60%;
+}
+.background-image img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+}
+.top-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 30px solid white;
+    box-sizing: border-box;
+    border-bottom: 100px solid white;
+
+}
+.menu{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 0px;
+}
+.nuuk-image img{
+    position: relative;
+    width: 100px;
+    padding: 50px 50px 50px 50px;
+    background-color: #e47312;
+    cursor: pointer;
+}
+.menu-items{
+    position: relative;
+    left: 0%;
+    top: -14px;
+    background-color: white;
+    padding: 40px;
+    padding-left: 500px;
+    
+    cursor: pointer;
+}
+.menu-items a{
+    font-size: 14px;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: black;
+}
+.menu-items .pages-item{
+    position: relative;
+    display: inline-block;
+}
+.sub-menu{
+    position: absolute;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    display: none;
+}
+.sub-menu a{
+    text-align: center;
+    font-size: 10px;
+    padding: 15px;
+    text-align: center;
+    margin: 0px 10px;
+}
+.menu-items .pages-item:hover .sub-menu{
+     display: flex; 
+}
+.sub-menu a:hover{
+    background-color: rgb(243, 222, 222);
+}
+.get-free-quote-top{
+    position: relative;
+    bottom: 14px;
+    right: 0px;
+    background-color: #e47312;
+    padding: 40px;
+}
+.get-free-quote-top a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.menu-items .fa-caret-down{
+    font-size: 12px;
+}
+.menu-items #home-item{
+    color: #e47312;
+}
+.menu-items a:hover{
+    color: #e47312;
+}
+.top-heading{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 2;
+}
+.top-heading h1{
+    color:white;
+    font-size: 62px;
+    font-weight: 400;
+}
+.para-1{
+    position: absolute;
+    top: 65%;
+    color:hsla(0, 0%, 100%, 0.7);
+    font-size: 20px;
+}
+
+.get-free-quote-in-content{
+    display: block;
+    position: absolute;
+    top: 120%;
+}
+.get-free-quote-in-content a{
+    text-decoration: none;
+    background-color: #e47312;
+    font-size: 12px;
+    padding: 15px 25px;
+    color: white;
+}
+.owner-details{
+    position: absolute;
+    top: 70%;
+    left: auto;
+    right: 1.4%;
+    display: flex;
+    background-color: #e47312;
+    background-image: linear-gradient(186deg, #e47312, #ff6361);
+    width: 1000px;
+}
+.all-detail{
+    display: flex;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.phone-number, .contact, .opening-times{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+}
+.phone-number i, .contact i, .opening-times i{
+    color: white;
+    font-size: 20px;
+}
+.phone-number #heading, .contact #heading, .opening-times #heading{
+    font-weight: 600;
+}
+.find-on-map{
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    font-weight: 600;
+}
+.find-on-map::after{
+    content: '';
+    display: block;
+    margin: auto;
+    border-top: 3px solid white;
+    width: 0px;
+    transition: 0.3s;
+}
+.find-on-map:hover::after{
+    width: 26%;
+}
+.social-media-icons-right-side{
+    position: absolute;
+    bottom: 30%;
+    right: 1.4%;
+    display: flex;
+    flex-direction: column;
+}
+.social-media-icons-right-side i{
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+
+.heading-2{
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    width: 100%;
+    padding-left: 150px;
+    padding: 50px;
+}
+.heading-2 h1{
+    position: relative;
+    display: inline;
+    font-size: 100px;
+    color: black;
+    opacity: 5%;
+}
+.heading-2 h2{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 32px;
+}
+.heading-2 a{
+    margin-left: 40%;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 4px;
+    color: rgb(153, 145, 145);
+}
+.heading-2 a:hover{
+    border-bottom: 3px solid #e47312;
+}
+.design-area{
+    display: flex;
+    position: absolute;
+    top:125%;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    align-items: center;
+    padding-left: 170px;
+    
+}
+.design-area .design-item{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    font-size: 12px;
+    margin-right: 50px;
+    text-align: left;
+}
+.design-item img{
+    margin: 0px;
+    padding: 0px;
+    width: 22%;
+    height: 52px;
+
+}
+.design-item h1{
+    font-size: 15px;
+}
+.design-item p{
+    font-size: 15px;
+    color: rgb(153, 145, 145);
+    line-height: 20px;
+}
+.design-item a{
+    text-decoration: none;
+    color: rgb(153, 145, 145);
+}
+.design-item a::after{
+    content: '';
+    display: block;
+    border-top: 3px solid #e47312;
+    width: 0px;
+    transition: ease-out 0.3s;
+}
+.design-item a:hover::after{
+    width: 80px;
+}
+.who-we-are-section{
+    padding-top: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+.image-left{
+    margin-left: 170px;
+}
+.image-left img{
+    padding-top: 50px;
+    width: 600px;
+}
+.right-content{
+    width: 500px;
+    margin-left: 100px;
+    line-height: 25px;
+    color: rgb(153, 145, 145);
+}
+.about-heading{
+    position: relative;
+    font-size: 100px;
+    color: black;
+    opacity: 5%;
+}
+.who-we-are-heading{
+    position: absolute;
+    top: 20%;
+    right: 33%;
+    color: black;
+}
+.right-content a{
+    text-decoration: none;
+    color: rgb(153, 145, 145);
+    font-size: 13px;
+}
+.right-content a::after{
+    content: '';
+    display: block;
+    border-top: 3px solid #e47312;
+    width: 0px;
+    transition: ease-out 0.3s;
+
+}
+.right-content a:hover::after{
+    width: 23%;
+}
+.experience-area{
+    position: absolute;
+    top: 235%;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    background-color: white;
+    padding-left: 160px;
+}
+.experience-item{
+    width: 170px;
+    margin-right: 150px;
+    line-height: 25px;
+}
+.experience-item h1{
+    font-size: 60px;
+    color: #e47312;
+}
+.experience-item p{
+    color:rgb(153, 145, 145);
+}
+
+.imp-area{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 5000px;
+    background-color: white;
+}
+.project-area{
+    position: relative;
+    width: 88%;
+    height: 3000px;
+    background-color: #f7f8fc;
+    margin-left: 10px;
+}
+.project-area h1{
+    position: absolute;
+    left: 8%;
+    font-size: 100px;
+    color: black;
+    opacity: 5%;
+}
+.project-area h2{
+    position: absolute;
+    top: 3%;
+    left: 13%;
+    font-size: 40px;
+}
+.project-area a{
+    position: absolute;
+    right: 10%;
+    top: 4%;
+    text-decoration: none;
+    color: rgb(153, 145, 145);
+    font-size: 15px;
+}
+.project-area a:hover{
+    border-bottom: 3px solid #e47312;
+}
+.grid-images{
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.grid-image-1 img, .grid-image-2 img{
+    width: 450px;
+    padding: 5px;
+}
+.small-area{
+    position: absolute;
+    top: 23%;
+    left: 0.5%;
+    width: 88%;
+    height: 300px;
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    text-align: center;
+}
+.small-area h1{
+    padding-top: 50px;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+.small-area p{
+    padding-bottom: 50px;
+    font-size: 20px;
+    color: white;
+}
+.small-area a{
+    text-decoration: none;
+    color: white;
+}
+.small-area a:hover{
+    border-bottom:2.5px solid white;
+}
+.team-area h1{
+    position: absolute;
+    top: 30%;
+    left:8%;
+    font-size: 100px;
+    color: black;
+    opacity: 5%;
+}
+.team-area h2{
+    position: absolute;
+    top: 32%;
+    left: 11%;
+    
+    font-size: 40px;
+}
+.team-area a{
+    position: absolute;
+    top: 32%;
+    right: 22%;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(153, 145, 145);
+
+}
+.team-area a:hover{
+    border-bottom: 2px solid #e47312;
+}
+.professionals-images{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    left: 9%;
+    width: 80%;
+    height: 150px;
+}
+.professional-1 img, .professional-2 img, .professional-3 img, .professional-4 img{
+    width: 79.5%;
+}
+.prof-details{
+    position: absolute;
+    top: 180%;
+    width: 242px;
+    background-color: white;
+    text-align: center;
+    padding-right: 25px;
+}
+.prof-details h3{
+    font-weight: 600;
+}
+.prof-details h4{
+    color: rgb(153, 145, 145);
+    padding-bottom: 14px;
+}
+.professional-1 .social-icons{
+    position: absolute;
+    top: 142%;
+    left: 15.7%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e47312;
+}
+.professional-2 .social-icons{
+    position: absolute;
+    top: 142%;
+    left: 40.7%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e47312;
+}
+.professional-3 .social-icons{
+    position: absolute;
+    top: 142%;
+    left: 65.7%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e47312;
+}
+.professional-4 .social-icons{
+    position: absolute;
+    top: 142%;
+    left: 90.7%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e47312;
+}
+.social-icons i{
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid rgb(245, 234, 234);
+    margin: auto;
+}
+
+.testimonials{
+    display: flex;
+}
+.testimonials .left-part{
+    width: 400px;
+}
+.testimonials .left-part{
+    position: absolute;
+    top: 47%;
+    left: 10%;
+}
+.left-part h1{
+    position: relative;
+    left:0%;
+    font-size: 100px;
+    color: black;
+    opacity: 5%;
+}
+.left-part h2{
+    position: absolute;
+    top: 43%;
+    left: 13%;
+    font-size: 30px;
+}
+.left-part p{
+    position: absolute;
+    top: 75%;
+    left: 13%;
+}
+.left-part a{
+    position: absolute;
+    top: 120%;
+    left: 13%;
+    text-decoration: none;
+    color: rgb(153, 145, 145);
+    font-size: 14px;
+}
+.left-part a:hover{
+    border-bottom: 2px solid #e47312;
+}
+.right-part-1 h2, .right-part-2 h2, .right-part-3 h2, .right-part-4 h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+.right-part-1 h3, .right-part-2 h3, .right-part-3 h3, .right-part-4 h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.right-part-1 p, .right-part-2 p, .right-part-3 p, .right-part-4 p{
+    font-size: 13px;
+    line-height: 20px;
+}
+.right-part-1, .right-part-2, .right-part-3, .right-part-4{
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+.right-part-1{
+    position: absolute;
+    top: 45%;
+    right: 43%;
+}
+.right-part-2{
+    position: absolute;
+    top: 46%;
+    right: 24%;
+}
+.right-part-3{
+    position: absolute;
+    top: 50%;
+    right: 43%;
+}
+.right-part-4{
+    position: absolute;
+    top: 51%;
+    right: 24%;
+}
+.blog-area h1{
+    position: relative;
+    top: 0%;
+    left:9%;
+    font-size: 100px;
+    color: black;
+    opacity: 5%;
+}
+.blog-area h2{
+    position: absolute;
+    top: 62%;
+    left: 11%;
+    font-size: 35px;
+}
+.blog-area a{
+    position: absolute;
+    top: 62%;
+    right: 25%;
+    text-decoration: none;
+    color: rgb(153, 145, 145);
+    font-size: 15px;
+}
+.blog-area a:hover{
+    border-bottom: 3px solid #e47312;
+}
+.blog-images{
+    position: absolute;
+    left: 8%;
+    display: flex;
+    width: 80%;
+}
+.blog-images img{
+    width: 28%;
+    margin: 15px;
+}
+.block-1{
+    position: absolute;
+    top: 70.28%;
+    width: 316px;
+    left: 8.9%;
+    background-color: #e47312;
+    line-height: 20px;
+    padding:30px;
+}
+.blog-image-matter h1{
+    font-size: 20px;
+    color: white;
+}
+.blog-image-matter p{
+    font-size: 14px;
+    color: white;
+}
+.blog-image-matter a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+
+}
+.blog-image-matter a:hover{
+    border-bottom: 3px solid white;
+    margin: auto;
+}
+.block-2{
+    position: absolute;
+    top: 70.28%;
+    width: 316px;
+    left: 33.05%;
+    background-color: #e47312;
+    line-height: 20px;
+    padding:30px;
+}
+.block-3{
+    position: absolute;
+    top: 70.28%;
+    width: 316px;
+    right: 20.35%;
+    background-color: #e47312;
+    line-height: 20px;
+    padding:30px;
+}
+.trusted-companies{
+    position: absolute;
+    top: 77%;
+    left: 2.5%;
+    width: 85%;
+    height: 200px;
+    background-color: #e47312;
+    display: flex;
+}
+.trusted-companies h4{
+    display: inline;
+    margin: 0;
+    padding-top: 80px;
+    margin-left: 100px;
+    color: white;
+}
+.trusted-companies a{
+    margin-left: 80px;
+    text-decoration: none;
+    padding-top: 70px;
+    font-size: 30px;
+    color: white;
+}
+.footer{
+    position: absolute;
+    top: 81%;
+    left: 8%;
+    width: 75%;
+    height: 500px;
+    background-color: #0a1229;
+    display: flex;
+}
+.footer .about-section{
+    width: 25%;
+    padding: 50px;
+    line-height: 28px;
+}
+.footer .about-section h4{
+    color: white;
+}
+.footer .about-section p{
+    color: white;
+}
+.footer .about-section a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+.footer .about-section a:hover{
+    border-bottom: 3px solid white;
+}
+
+.footer .services-section{
+    width: 15%;
+    padding: 50px;
+    line-height: 28px; 
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+    margin-left: 30px;
+}
+.footer h4{
+    color: white;
+}
+.footer .services-section a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin-right: auto;
+}
+.footer .services-section a:hover{
+    border-bottom: 3px solid white;
+}
+
+.contact-section{
+    padding: 50px;
+    margin-left: 30px;
+}
+.contact-section .phone-icon{
+    display: flex;
+    flex-direction: row;
+}
+.contact-section .phone-icon h5, .time-icon h5, .contact-icon h5{
+    display: inline;
+    margin: 0%;
+    color: white;
+   
+}
+.contact-section .phone-icon i, .time-icon i, .contact-icon i{
+    color: white;
+    margin-right: 15px;
+    
+}
+.contact-section p{
+    color: white;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.nuuk-bottom{
+    position: absolute;
+    top: 84.5%;
+    background-color: #e47312;
+}
+.nuuk-bottom img{
+    width: 150px;
+    padding: 20px;
+}
+.final{
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    background-repeat: repeat, no-repeat;
+    background-attachment: scroll, fixed;
+    text-align: center;
+}
